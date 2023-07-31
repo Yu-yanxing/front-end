@@ -1,0 +1,23 @@
+div{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+#a{
+    background-image: url(mountains.jpg);
+    /*原画像的纵横比保持并调整*/
+    background-size: contain;
+    /*背景不保留*/
+    background-repeat: no-repeat;
+}
+#b{
+    background-image: url(mountains.jpg);
+    /*原画像的纵横比保持并覆盖*/
+    background-size: cover;
+}
+ #c{
+        background-image: url(mountains.jpg);
+        /*原画像的纵横比保持并覆盖*/
+        background-size: 100% 100%;
+    
+}

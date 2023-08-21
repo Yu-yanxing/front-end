@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo3</title>
+
+    <script type="text/javascript">
+        function displayDate(){
+            document.getElementById("demo").innerHTML=Date();
+        }
+    </script>
+</head>
+<body>
+    <h1>第一个JS小程序</h1>
+    <p id="demo">这是显示日期</p>
+    <!--onclick属性表示鼠标单击按钮，触发displayDate()方法------>
+    <button type="button" onclick="displayDate()">显示当前日期</button>
+
+    <!--题目-第一行写 第一个JS小程序 
+        第二行写 这是显示日期--
+        第三行写 显示当前日期，但是点击得有实际效果--->
+    <!--以上是练习题的三行要求-那么第三行怎么样才能点击有反应----->
+    <!--采用直接嵌入用script在head上面写----->
+    <!--第三行得用 显示当前时间的函数 构造function-->
+</body>
+</html>

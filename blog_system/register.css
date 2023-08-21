@@ -1,0 +1,75 @@
+
+
+.register-container {
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-dialog {
+    width: 500px;
+    height: 350px; 
+    background-color: rgb(255, 255, 255,0.5);
+    border-radius: 10px;
+}
+.register-dialog h3{
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    margin: 45px 0;
+    color: rgb(0, 0, 0,0.7);
+}
+.row {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.row #name {
+    width: 350px;
+    height: 40px;
+    font-size: 20px;
+    text-indent: 10px;
+    background-color:white;
+    border-color: orange;
+    border-radius: 10px;
+}
+.row #email {
+    width: 350px;
+    height: 40px;
+    font-size: 20px;
+    text-indent: 10px;
+    background-color:white;
+    border-color: orange;
+    border-radius: 10px;
+}
+.row #password {
+    width: 350px;
+    height: 40px;
+    font-size: 20px;
+    text-indent: 10px;
+    background-color:white;
+    border-color: orange;
+    border-radius: 10px;
+}
+.row #submit{
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    color: white; 
+    background: rgb(255, 165, 0,0.5);
+    border-color: orange;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.row #submit:hover{
+    background-color: rgb(53, 178, 224);
+}
+.row label{
+    width:80px;
+    display: inline-block;
+    text-align: center;
+}

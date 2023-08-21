@@ -1,0 +1,35 @@
+
+.blog{
+    padding: 20px ;
+}
+/* blogのtitle */
+.blog .title {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 900;
+}
+.blog .date{
+    padding: 15px;
+    text-align: center;
+    color: green;
+}
+.blog .desc {
+    text-indent: 20em;
+}
+.blog a {
+    display: block;
+    width: 150px;
+    height: 40px;
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    margin:10px auto;
+    /*transition2s */
+    transition: all 1s;
+}
+.blog a:hover {
+    background-color: rgb(188, 212, 101);
+    color: white;
+}

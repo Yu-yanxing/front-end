@@ -1,0 +1,27 @@
+.container{
+    width:220px;
+    border:1px solid hsl(111, 65%, 42%);
+    padding: 6px;
+    margin:0 auto;
+    border-radius: 8px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 8px;
+}
+#name,#email,#password{
+    width: 85%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+#submit-button{
+    background-color: #bb4d8b;
+    color: white;
+    width: 80%;
+    padding: 15px;
+    border-radius: 6px;
+}
+#submit-button:hover{
+    background-color: rgb(208, 255, 127);
+}

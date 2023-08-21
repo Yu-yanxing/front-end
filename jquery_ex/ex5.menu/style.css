@@ -1,0 +1,64 @@
+/*附带btn*/
+
+/*01 click前*/
+.nav_toggle{
+    display: block;
+    position: relative;
+    width: 1.75rem;
+    height: 1.5rem;
+}
+.nav_toggle i{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    transition: transform .5s, opacity .5s;
+}
+/*第1条横线*/
+.nav_toggle i:nth-child(1){ 
+    top: 0;
+}
+/*第2条横线*/
+.nav_toggle i:nth-child(2){
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+/*第3条横线*/
+.nav_toggle i:nth-child(3){
+    bottom: 0;
+}
+/*02 click后*/
+.nav_toggle.show i:nth-child(1){
+    /*意思是；最上面的线以10px移动，
+    而且以负45度反时针旋转*/
+    transform: translateY(10px)rotate(-45deg);
+}
+.nav_toggle.show i:nth-child(2){
+    opacity: 0;
+}
+.nav_toggle.show i:nth-child(1){
+    /*意思是；最下面的线以12px移动，
+    而且以正45度时针旋转*/
+    transform: translateY(-12px)rotate(45deg);
+}
+/*menu-list*/
+/*03 click前*/ 
+.nav{
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 16px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+
+}
+/*04 click后*/
+.nav,show{
+    overflow: 1;
+    visibility: visible;
+}

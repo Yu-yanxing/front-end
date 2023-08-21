@@ -1,0 +1,186 @@
+
+
+.login-container {
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-dialog {
+    width: 500px;
+    height: 350px; 
+    background-color: rgb(255, 255, 255,0.5);
+    border-radius: 10px;
+}
+.login-dialog h3{
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    margin: 45px 0;
+    color: rgb(0, 0, 0,0.7);
+}
+.row {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.row #email {
+    width: 350px;
+    height: 40px;
+    font-size: 20px;
+    text-indent: 10px;
+    background-color:white;
+    border-color: orange;
+    border-radius: 10px;
+}
+.row #password {
+    width: 350px;
+    height: 40px;
+    font-size: 20px;
+    text-indent: 10px;
+    background-color:white;
+    border-color: orange;
+    border-radius: 10px;
+}
+.row #submit{
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    color: white; 
+    background: rgb(255, 165, 0,0.5);
+    border-color: orange;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.row #submit:hover{
+    background-color: rgb(53, 178, 224);
+}
+.row label{
+    width:80px;
+    display: inline-block;
+    text-align: center;
+}
+.login-container button{ 
+	/*overflow: hidden;*/
+	position: relative;
+	padding: 10px 20px;
+	color: #0a0a09;
+	font-family:'Pacifico', cursive;
+    font-size: 20px;
+	/*同样加个过渡*/
+	transition: all 0.5s;
+    border-radius: 10px;
+}
+.login-container button:hover { 
+   
+	color: #fff;
+	border-radius: 5px;
+	background-color: #03e9f4;
+	box-shadow: 0 0 5px #03e9f4,0 0 25px #03e9f4,0 0 50px #03e9f4,0 0 100px #03e9f4;
+}
+.login-container button span{ 
+   
+	position: absolute;
+}
+.login-container button span:first-child { 
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	/*to right 就是往右边 下面的同理*/
+	background: linear-gradient(to right,transparent,#03e9f4);
+	/*动画 名称 时长 linear是匀速运动 infinite是无限次运动*/
+	animation: move1 1s linear infinite;
+
+}
+.login-container button span:nth-child(2){ 
+	right: 0;
+	top: -100%;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(transparent,#03e6f4);
+	/*这里多了个0.25s其实是延迟时间*/
+	animation: move2 1s linear 0.25s infinite;
+}
+.login-container button span:nth-child(3){ 
+   
+	right: -100%;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to left,transparent,#03e9f4);
+	animation: move3 1s linear 0.5s infinite;
+}
+.login-container button span:last-child{ 
+	left: 0;
+	bottom: -100%;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(#03e9f4,transparent);
+	animation: move4 1s linear 0.75s infinite;
+}
+/*写一下动画 */
+@keyframes move1{ 
+	0%{ 
+
+		left: -100%;
+
+	}
+	50%, 100%{ 
+   
+		left: 100%;
+	}
+}
+
+@keyframes move2{ 
+   
+	0%{ 
+   
+		top: -100%;
+
+	}
+	50%, 100%{ 
+   
+		top: 100%;
+	}
+}
+
+@keyframes move3{ 
+   
+	0%{ 
+   
+		right: -100%;
+
+	}
+	50%, 100%{ 
+   
+		right: 100%;
+	}
+}
+
+@keyframes move4{ 
+   
+	0%{ 
+   
+		bottom: -100%;
+
+	}
+	50%, 100%{ 
+   
+		bottom: 100%;
+	}
+}
+.login-container button{
+    margin-left: 210px;
+    
+}
+h3{
+	color: #594A4E;
+	font-size:30px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+	
+}

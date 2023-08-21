@@ -1,0 +1,30 @@
+body{
+    /*把隐藏了的要素显示出来*/
+    padding-top:90px;
+}
+header{
+    /*满宽*/
+    width: 100%;
+    /*指定高度*/
+    height: 50px;
+    background-color: khaki;
+    padding: 20px 50px;
+    /*window为基准的画面固定*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*以下2行经常使用且常一起使用*/
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    gap: 0 40px;
+}
+.menu li{
+    /*list的ul的原点的消除*/
+    list-style: none;
+}
+main{
+    height: 1200px;
+}
